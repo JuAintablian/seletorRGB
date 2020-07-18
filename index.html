@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletor de cores RGB</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Seletor de cores RGB</h1>
+      <div class="seletores">
+        <div class="columns">
+          <label for="corlor-r">(R) Vermelho:</label>
+          <label for="corlor-g">(G) Verde:</label>
+          <label for="corlor-b">(B) Azul:</label>
+        </div>
+        <div class="columns">
+          <input id="color-r" type="range" min="0" max="255" />
+          <input id="color-g" type="range" min="0" max="255" />
+          <input id="color-b" type="range" min="0" max="255" />
+        </div>
+        <div class="columns w-3">
+          <input id="value-r" type="text" readonly disabled />
+          <input id="value-g" type="text" readonly disabled />
+          <input id="value-b" type="text" readonly disabled />
+        </div>
+      </div>
+      <div class="painel">
+        <div id="selectedColor" class="selectedColor"></div>
+      </div>
+    </div>
+    <script defer src="assets/js/scripts.js"></script>
+  </body>
+</html>
